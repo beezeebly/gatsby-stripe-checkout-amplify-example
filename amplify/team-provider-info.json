@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-gatsbystripecheckout-dev-112610-authRole",
+            "UnauthRoleArn": "arn:aws:iam::343165084847:role/amplify-gatsbystripecheckout-dev-112610-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::343165084847:role/amplify-gatsbystripecheckout-dev-112610-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-gatsbystripecheckout-dev-112610-deployment",
+            "UnauthRoleName": "amplify-gatsbystripecheckout-dev-112610-unauthRole",
+            "StackName": "amplify-gatsbystripecheckout-dev-112610",
+            "StackId": "arn:aws:cloudformation:eu-west-2:343165084847:stack/amplify-gatsbystripecheckout-dev-112610/f8347320-b084-11ea-8fe9-02c134fada26",
+            "AmplifyAppId": "d1hlu3pow7v74u"
+        }
+    }
+}

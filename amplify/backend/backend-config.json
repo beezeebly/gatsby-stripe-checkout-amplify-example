@@ -1,0 +1,38 @@
+{
+    "function": {
+        "stripeCheckout": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda"
+        },
+        "stripeHook": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda"
+        }
+    },
+    "api": {
+        "stripeAPI": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "stripeCheckout",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "stripeHook",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
+        }
+    }
+}
